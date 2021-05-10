@@ -13,6 +13,11 @@ class Test(TestCase):
         expected = False
         self.assertEqual(check_pwd(inp), expected)
 
+    def testLength1(self):
+        inp = "abcdefg"
+        expected = False
+        self.assertFalse(check_pwd(inp), expected)
+
 
 if __name__ == '__main__':
     unittest.main()

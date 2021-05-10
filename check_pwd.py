@@ -3,4 +3,4 @@
 # A2: TDD Hands On - Check password code
 
 def check_pwd(password):
-    return
+    return True

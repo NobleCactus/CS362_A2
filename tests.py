@@ -15,8 +15,11 @@ class Test(TestCase):
 
     def testLength1(self):
         inp = "abcdefg"
-        expected = False
-        self.assertFalse(check_pwd(inp), expected)
+        self.assertFalse(check_pwd(inp))
+
+    def testLength2(self):
+        inp = "abcdefghijklmnopqrstu"
+        self.assertFalse(check_pwd(inp))
 
 
 if __name__ == '__main__':

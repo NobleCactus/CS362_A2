@@ -8,7 +8,10 @@ from check_pwd import check_pwd
 
 
 class Test(TestCase):
-    pass
+    def test1(self):
+        inp = ""
+        expected = False
+        self.assertEqual(check_pwd(inp), expected)
 
 
 if __name__ == '__main__':

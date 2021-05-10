@@ -8,3 +8,5 @@ def check_pwd(password):
     if len(password) > 20:
         return False
     return True
+
+st = "HhjroOhjdsfRkdfhSkjergE"

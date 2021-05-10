@@ -5,6 +5,7 @@
 def check_pwd(password):
     lowercase_letter_present = 0
     uppercase_letter_present = 0
+    number_present = 0
     if len(password) < 8:
         return False
     if len(password) > 20:
@@ -14,6 +15,9 @@ def check_pwd(password):
             lowercase_letter_present = 1
         elif char.isupper():
             uppercase_letter_present = 1
-    if lowercase_letter_present == 0 or uppercase_letter_present == 0:
+        elif char.isdigit():
+            number_present = 1
+    if lowercase_letter_present == 0 or uppercase_letter_present == 0 \
+            or number_present == 0:
         return False
     return True

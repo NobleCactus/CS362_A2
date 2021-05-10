@@ -3,15 +3,14 @@
 # A2: TDD Hands On - Check password code
 
 def check_pwd(password):
+    length = len(password)
     lowercase_letter_present = 0
     uppercase_letter_present = 0
     number_present = 0
     special_char_present = 0
     special_chars = ['~', '`', '!', '@', '#', '$', '%', '^', '&', '*',
                      '(', ')', '_', '+', '-', '=']
-    if len(password) < 8:
-        return False
-    if len(password) > 20:
+    if length < 8 or length > 20:
         return False
     for char in password:
         if char.islower():

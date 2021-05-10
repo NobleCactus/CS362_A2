@@ -33,6 +33,10 @@ class Test(TestCase):
         inp = "TestPassword"
         self.assertFalse(check_pwd(inp))
 
+    def testChars4(self):
+        inp = "TestPassword123"
+        self.assertFalse(check_pwd(inp))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -21,6 +21,10 @@ class Test(TestCase):
         inp = "abcdefghijklmnopqrstu"
         self.assertFalse(check_pwd(inp))
 
+    def testChars1(self):
+        inp = 'TESTPASSWORD'
+        self.assertFalse(check_pwd(inp))
+
 
 if __name__ == '__main__':
     unittest.main()

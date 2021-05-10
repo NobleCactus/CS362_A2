@@ -22,7 +22,11 @@ class Test(TestCase):
         self.assertFalse(check_pwd(inp))
 
     def testChars1(self):
-        inp = 'TESTPASSWORD'
+        inp = "TESTPASSWORD"
+        self.assertFalse(check_pwd(inp))
+
+    def testChars2(self):
+        inp = "testpassword"
         self.assertFalse(check_pwd(inp))
 
 
